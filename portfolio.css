@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: .9rem;
+}
+
+body {
+    text-align: center;
+    margin: 0;
+    color: #252525;
+    font-family: 'Roboto Serif', serif;
+    background-color: #252525;
+}
+
+/* *************************************
+Typography
+************************************* */
+
+h1 {
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+
+a {
+    color: #99d930;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: yellow;
+}
+
+.main-page-link {
+    color: #99d930;
+}
+
+/* *************************************
+LAYOUT
+************************************* */
+
+header {
+    background-color: #252525;
+    color: rgb(255, 255, 255);
+    padding-top: .35em;
+    padding-bottom: 3em;
+}
+
+
+.projects-container {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-card {
+    border-radius: 5%;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 370px;
+    height: 200px;
+    margin-bottom: 1em;
+}
+
+
+
+
+
+.project-title {
+    /* position: fixed;  */
+    font-weight: bold;
+    opacity: 0;
+    text-align: center;
+}
+
+.pr-language {
+    color: rgb(3, 119, 9);
+    text-shadow: 0 0 15px #dae2e2;
+}
+
+.project-name {
+    color: rgb(4, 4, 82);
+    font-size: 1.3rem;
+    text-shadow: 0 0 15px #dae2e2;
+}
+
+.view-more {
+    text-decoration: none;
+    color: rgb(5, 0, 0);
+    border: 1px solid rgb(4, 4, 82);
+    background-color: rgb(194, 194, 247);
+    border-radius: 5px;
+    padding: .5em;
+    cursor: pointer;
+    opacity: 0;
+    scale: 1;
+    transition: opacity 0s, scale 0.8s;
+}
+
+.view-more:hover,
+.view-more:focus {
+    scale: 1.1;
+}
+
+
+
+.emojis-background {
+    background-image: url(images/PorjectScreens/Emojis.PNG);
+}
+
+.responsive-PG-background {
+    background-image: url(images/PorjectScreens/responsivePG.PNG);
+}
+
+.back-card { 
+    opacity: 1;
+    transition: opacity 0.8s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.back-card:hover {
+    opacity: .8;
+}
+
+.back-card:hover .view-more {
+    opacity: 1;
+    animation: fadeVisibility 1.5s;
+}
+
+.back-card:hover p {
+    opacity: 1;
+    animation: fadeVisibility 1.5s;
+}
+
+.back-card:hover {
+    background-color: rgb(241, 141, 141);
+    background-blend-mode:hue;
+}
+
+.back-card:hover .pr-language {
+    margin-top: 0;
+}
+
+
+
+@keyframes fadeVisibility {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
