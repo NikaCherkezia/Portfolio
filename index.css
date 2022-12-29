@@ -1,0 +1,392 @@
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: .9rem;
+}
+
+body {
+    text-align: center;
+    margin: 0;
+    color: #252525;
+    font-family: 'Roboto Serif', serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* *************************************
+Typography
+************************************* */
+
+h1 {
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: .35em;
+}
+
+a {
+    color: #99d930;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: yellow;
+}
+
+
+/* *************************************
+LAYOUT
+************************************* */
+
+header {
+    background-color: #252525;
+    color: rgb(255, 255, 255);
+    padding-top: .35em;
+    padding-bottom: 3em;
+}
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 560px;
+}
+
+
+/* *************************************
+PERSONAL INFO
+************************************* */
+
+.personal-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-info {
+    padding-right: 1em;
+}
+
+
+.contact-info {
+    padding-left: 1em;
+}
+
+.about-info p,
+.contact-info p,
+.linkedin-link {
+    color: #252525;
+    font-weight: bold;
+}
+
+.about-info p span:first-of-type {
+    margin-top: 1em;
+}
+
+.about-info span,
+.contact-info span,
+.linkedin-link {
+    /* color: #99d930; */
+    text-shadow: 0 0 5px #faf61e;
+}
+
+
+.linkedin-link:hover,
+.linkedin-link:focus {
+    color: #99d930;
+}
+
+
+
+.linkedin-logo {
+    width: 18px;
+    margin-right: 0.2em;
+}
+
+
+
+.info-heading {
+    margin-bottom: 0;
+}
+
+.personal-info span {
+    display: block;
+}
+
+.acent-color {
+    color: #99d930;
+    display: block;
+    padding-bottom: 0.35em;
+}
+
+.my-name {
+    font-weight: 900;
+    margin-top: .75em;
+}
+
+img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.profile-img {
+    max-width: 100%;
+    max-height: 150px;
+}
+
+.portfolio-item img {
+    border-radius: 0px;
+    margin-bottom: .5em;
+    max-width: 100%;
+}
+
+.section-headers {
+    border-top: 1px solid #252525;
+    border-bottom: 1px solid #252525;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.portfolio-header {
+    margin: 1em auto;
+    max-width: 560px;
+    font-size: 2rem;
+}
+
+.portfolio-header .acent-color {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+}
+
+.section-one {
+    padding-top: .75em;
+}
+
+.section-two {
+    background-color: #252525;
+    color: white;
+    padding-top: .75em;
+}
+
+.section-two .section-headers{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.plain-text {
+    max-width: 450px;
+    margin: 0 auto;
+    padding-top: 1.2em ;
+    font-size: 1.125rem;
+}
+
+.small-text {
+    display: block;
+    font-size: 0.7em;
+    padding-top: .5em;
+}
+
+.project-header {
+    font-size: 1.3rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #99d930;
+    color: black;
+    padding: .85em 1.35em;
+    font-weight: 900;
+    margin-top: 1em;
+    margin-bottom: 1.75em;
+    border-radius: 10px;
+}
+
+.btn:hover,
+.btn:focus {
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 10px rgb(255, 60, 0);
+    color: brown;
+}
+
+.page-info {
+    margin-bottom: 1.5em;
+    font-size: 1.125rem;
+
+}
+
+.programing-languages-container,
+.languages-cotainer {
+    width: 100%;
+    border: 1px solid #99d930;
+    background-color: #99d930;
+}
+.languages-cotainer {
+    margin-top: .3em;
+}
+
+.languages-cotainer .lang {
+    margin: .4em;
+}
+
+.programming-languages-header {
+    margin-top: 0;
+    margin-bottom: .2em;
+}
+
+.logos {
+    border: none;
+    border-radius: 0%;
+    width: 30px;
+    height: 30px;
+}
+
+
+.programming-language {
+    display: inline-block;
+    margin-right: .5em;
+}
+
+@media (min-width: 800px) {
+
+    html {
+        font-size: 1.1rem;
+    }
+
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+        border: 1px solid #252525;
+    }
+
+    .splitter {
+        display: flex;
+        justify-content: center;       
+    }
+
+    .work {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .portfolio {
+        background-color: #252525;
+        color: white;
+        padding-top: .05em;
+        min-height: 80vh;
+        display: flex;
+    }
+
+    .portfolio-header {
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+
+    .who-am-i {
+        max-width: 350px;
+    }
+
+    .portfolio-item {
+        width: 30%;
+    }
+
+    /* img {
+        max-width: 300px;
+    } */
+
+    .profile-img {
+        max-width: 100%;
+        max-height: 200px;
+    }
+
+    .portfolio-photo {
+        height: 15em;
+        object-fit: cover;
+    }
+
+    .section-one {
+        width: 50%;
+    }
+
+    .section-two {
+        width: 50%;
+    }
+
+    .section-headers {
+        margin-top: 3em;
+    }
+
+    .portfolio-header {
+        margin-top: 1.125em;
+    }
+
+    .section-two {
+        background-color: #99d930;
+        color: black;        
+    }
+
+    h2 {
+        font-weight: 300;
+    }
+
+    .section-two .acent-color {
+        color: black;
+        font-weight: 600;     
+    }
+
+    .section-one .acent-color {
+        font-weight: 600;
+    }
+
+    .section-two .btn {
+        display: inline-block;
+        background-color: black;
+        color: white;
+        padding: .85em 1.35em;
+        font-weight: 900;
+        margin-bottom: 1.75em;
+        border-radius: 10px;
+    }
+    
+    .section-two .btn:hover,
+    .btn:focus {
+        border-radius: 20px;
+        box-shadow: 0px 0px 15px 10px rgb(255, 60, 0);
+        color: rgb(11, 185, 238);
+    }
+
+    a {
+        color: black;
+    }
+
+    .plain-text a {
+        text-decoration: underline;
+        font-weight: 600;
+    }
+
+    .plain-text {
+        padding: 0 1em;
+    }
+
+    .section-two .section-headers{
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+}
+
+/* **************************** */
+/* Portfolio */
+/* **************************** */
